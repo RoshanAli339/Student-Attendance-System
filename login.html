@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT ATTENDANCE SYSTEM</title>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+    <h2>ATTENDANCE LOGIN FORM</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width: auto">
+        Login
+    </button>
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                <img src="logo.png" alt="Avatar" class="avatar" />
+            </div>
+
+            <div class="container">
+                <label for="name"><b>USERNAME:</b></label>
+                <input type="text" placeholder="ENTER USERNAME" name="name" required />
+
+                <label for="psw"><b>PASSWORD:</b></label>
+                <input type="PASSWORD" placeholder="ENTER PASSWORD" name="pass" required />
+
+                <button type="submit" >Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" /> Remember
+                    me
+                </label>
+            </div>
+
+            <div class="container" style="background-color: #f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+                    Cancel
+                </button>
+                <span class="pass"><a href="#">FORGET PASSWORD?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
