@@ -4,10 +4,10 @@ function validate() {
 
     if (uname == "roshanali339lps@gmail.com" && pwd == "xtremer339")
     {
-        window.location.href="./admin.html";
+        window.location = "admin.html";
     }
     else
     {
-        document.getElementById("error").innerHTML = "Invalid username or password<br>"
+        alert("Invalid Username or Password!")
     }
 }
