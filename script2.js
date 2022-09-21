@@ -13,7 +13,7 @@ onload = fetch("./attendance.csv").then(res => {
     }
     head += "</thead>";
     for (let i = 0; i < result.length; i++) {
-        html += "<tr>\n"
+        html += "<tr>\n\t<td>" + (i+1) + "</td>" 
         for (let j = 0; j < result[i].length; ++j) {
             html += "\t<td>" + result[i][j] + "</td>\n"
         }

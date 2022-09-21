@@ -6,7 +6,7 @@ onload = fetch("./attendance.csv").then(res => {
     })
     
     result.sort(function (a,b) {
-        return b[4] - a[4];
+        return b[3] - a[3];
     });
 
     var heading = ["S.No", "Name", "Regd. No.", "Year of study", "Percentage"];
@@ -29,6 +29,7 @@ onload = fetch("./attendance.csv").then(res => {
         {
             html += "<tr>\n"
         }
+        html += "\t<td>"+(i+1)+"</td>"
         for (let j = 0; j < result[i].length; ++j) {
             html += "\t<td>" + result[i][j] + "</td>\n"
         }

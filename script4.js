@@ -1,11 +1,12 @@
 function addStudent()
 {
-    var name = document.getElementById('name').value
+    var sName = document.getElementById('sName').value
     var number = document.getElementById('number').value
     var year = document.getElementById('year').value
     var percentage = document.getElementById('percentage').value
 
-    const fs = require('fs')
-    let data = name+", "+number+", "+year+", "+percentage+"\n"
-    fs.appendFileSync('./attendance.csv', data)
+    var data = "\n"+sName+", "+number+", "+year+", "+percentage
+    console.log(data);
+    const fs = require("fs");
+    fs.appendFileSync("attendance.csv", data)
 }
